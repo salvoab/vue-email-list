@@ -40,8 +40,9 @@ body{
     height: 100vh;
 }
 
-#app{
+.grid{
     width: 60%;
+    margin: auto;
     display: flex;
     flex-wrap: wrap;
 }

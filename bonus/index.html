@@ -16,9 +16,11 @@
                 Se il numero è minore o uguale a 5 la casella si colora di giallo, se il numero è maggiore di 5 si colora di verde.
             </p>
 
-            <div v-for="(randomNumber, index) in randomNumbers" class="grid-element flex-center" @click="getRandomNumber(index)"
-            :class=" (randomNumber == 0) ? 'bg-grey' : (randomNumber <= 5) ? 'bg-yellow' : 'bg-green' ">
-                <strong>{{randomNumber}}</strong>
+            <div class="grid">
+                <div v-for="(randomNumber, index) in randomNumbers" class="grid-element flex-center" @click="getRandomNumber(index)"
+                :class=" (randomNumber == 0) ? 'bg-grey' : (randomNumber <= 5) ? 'bg-yellow' : 'bg-green' ">
+                    <strong>{{randomNumber}}</strong>
+                </div>
             </div>
         </div>
 
