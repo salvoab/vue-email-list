@@ -48,12 +48,12 @@ body{
 
 .grid-element{
     width: calc(100% / 6);
-    padding: 20px 0;
     border: 2px solid black;
     cursor: pointer;
 }
 
 .grid-element strong{
+    padding: 25% 0;
     font-size: 30px;
     cursor: pointer;
 }
