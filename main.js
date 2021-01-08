@@ -10,6 +10,9 @@ let app = new Vue({
                 .then(response =>{
                     this.emails.push(response.data.response);
                 })
+                .catch(error => {
+                    console.log(error);
+                });
         }
     }
 });
