@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Utility class */
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+#app{
+    width: 600px;
+    height: 600px;
+    background-color: grey;
+}
+
+.grid-element{
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+}
+
+.grid-element strong{
+    font-size: 30px;
+}
