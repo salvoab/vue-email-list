@@ -24,22 +24,31 @@
 }
 /* END Utility */
 
+/* Typo */
+h2{
+    width: 100%;
+    text-align: center;
+}
+
+p{
+    padding: 10px;
+}
+/* END Typo*/
+
 body{
     width: 100vw;
     height: 100vh;
 }
 
 #app{
-    width: 600px;
-    height: 600px;
+    width: 60%;
     display: flex;
     flex-wrap: wrap;
-    background-color: grey;
 }
 
 .grid-element{
-    width: 100px;
-    height: 100px;
+    width: calc(100% / 6);
+    padding: 20px 0;
     border: 2px solid black;
     cursor: pointer;
 }
