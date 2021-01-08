@@ -10,8 +10,9 @@
     </head>
     <body class="flex-center">
         <div id="app">
-            <div class="grid-element flex-center">
-                <strong>5</strong>
+            <div v-for="(randomNumber, index) in randomNumbers" class="grid-element flex-center" @click="getRandomNumber(index)"
+            :class=" (randomNumber == 0) ? 'bg-grey' : (randomNumber <= 5) ? 'bg-yellow' : 'bg-green' ">
+                <strong>{{randomNumber}}</strong>
             </div>
         </div>
 

@@ -11,6 +11,19 @@
     align-items: center;
 }
 
+.bg-yellow{
+    background-color: yellow;
+}
+
+.bg-green{
+    background-color: green;
+}
+
+.bg-grey{
+    background-color: grey;
+}
+/* END Utility */
+
 body{
     width: 100vw;
     height: 100vh;
@@ -19,6 +32,8 @@ body{
 #app{
     width: 600px;
     height: 600px;
+    display: flex;
+    flex-wrap: wrap;
     background-color: grey;
 }
 
@@ -26,8 +41,10 @@ body{
     width: 100px;
     height: 100px;
     border: 2px solid black;
+    cursor: pointer;
 }
 
 .grid-element strong{
     font-size: 30px;
+    cursor: pointer;
 }
