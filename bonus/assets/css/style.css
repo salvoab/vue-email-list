@@ -41,7 +41,7 @@ body{
 }
 
 .grid{
-    width: 60%;
+    width: 45%;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -54,7 +54,6 @@ body{
 }
 
 .grid-element strong{
-    padding: 25% 0;
     font-size: 30px;
     cursor: pointer;
 }

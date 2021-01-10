@@ -27,5 +27,18 @@ let app = new Vue({
         for(let i=0; i<gridDimension; i++){
             this.randomNumbers.push(0);
         }
+    },
+    updated(){
+        function makeSquareGridElements(){
+            // Voglio rendere gli elementi grid-element quadrati
+            const gridElements = document.querySelectorAll('.grid-element');
+            // Pongo l'altezza uguale alla larghezza
+            gridElements.forEach(element => {
+                element.style.height = getComputedStyle(element).width;
+            });
+        }
+        
+        makeSquareGridElements()
+        window.addEventListener('resize', makeSquareGridElements);
     }
 });
